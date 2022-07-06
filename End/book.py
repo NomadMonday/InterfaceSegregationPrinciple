@@ -1,8 +1,7 @@
+from abc_borrowable_book import ABCBorrowableBook
 from datetime import datetime
-from abc_library_item import ABCLibraryItem
-import datetime
 
-class Book(ABCLibraryItem):
+class Book(ABCBorrowableBook):
     def __init__(self):
         super().__init__()
         self.checkout_duration_in_days = 14
