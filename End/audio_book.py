@@ -1,7 +1,7 @@
-from abc_library_item import ABCLibraryItem
+from abc_borrowable_audio_book import ABCBorrowableAudioBook
 import datetime
 
-class AudioBook(ABCLibraryItem):
+class AudioBook(ABCBorrowableAudioBook):
     def __init__(self):
         super().__init__()
         self.pages = -1

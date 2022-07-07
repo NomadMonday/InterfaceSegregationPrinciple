@@ -1,7 +1,7 @@
-from abc_library_item import ABCLibraryItem
+from abc_borrowable_dvd import ABCBorrowableDVD
 import datetime
 
-class DVD(ABCLibraryItem):
+class DVD(ABCBorrowableDVD):
     def __init__(self):
         super().__init__()
         self.author = ""
